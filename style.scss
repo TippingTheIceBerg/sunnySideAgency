@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(243, 235, 229);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.main__backgroundImg{
+    background: url(./images/mobile/image-header.jpg) center/cover no-repeat;
+    height: 100vh;
+    padding-top: 1px;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 1.6em;
+        
+    }
+}

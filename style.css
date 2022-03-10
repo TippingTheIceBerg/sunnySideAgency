@@ -1,0 +1,17 @@
+body {
+  background-color: #f3ebe5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main__backgroundImg {
+  background: url(./images/mobile/image-header.jpg) center/cover no-repeat;
+  height: 100vh;
+  padding-top: 1px;
+}
+.main__backgroundImg nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.6em;
+}/*# sourceMappingURL=style.css.map */
