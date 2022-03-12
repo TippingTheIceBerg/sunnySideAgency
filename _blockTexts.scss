@@ -4,7 +4,16 @@
     align-items: center;
 }
 
-#section__title{
+@mixin bgLinkBehind{
+    content: "";
+    width: 100%;
+    height: 10px;
+    top:16px;
+    position: absolute;
+    z-index: -2;
+}
+
+.sectionContainer{
     @include flexEvenly();
     height: 50vh;
     flex-direction: column;
@@ -25,12 +34,12 @@
             color: black;
             position: relative;
         }
-        .link::before{
-            content: "";
+        .link__orange::before{
+            @include bgLinkBehind();
             background: rgb(236 160 17/.6);
-            width: 100%;
-            height: 10px;
-            top:16px;
-            position: absolute;
-            z-index: -2;
         }
+        .link__red::before{
+           @include bgLinkBehind();
+           background: rgba(255 0 0/.6);
+        }
+      
