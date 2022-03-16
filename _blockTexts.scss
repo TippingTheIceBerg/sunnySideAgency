@@ -1,20 +1,20 @@
-@mixin flexEvenly{
+@mixin flexCenter($justify-content){
     display: flex;
-    justify-content: space-evenly;
+    justify-content: $justify-content;
     align-items: center;
 }
 
 @mixin bgLinkBehind{
     content: "";
-    width: 100%;
+    width: 100px;
     height: 10px;
     top:16px;
     position: absolute;
-    z-index: -2;
+   
 }
 
 .sectionContainer{
-    @include flexEvenly();
+    @include flexCenter(space-evenly);
     height: 50vh;
     flex-direction: column;
     margin: 1em;
@@ -27,7 +27,7 @@
             font-size: 1.2em;
             font-weight: 100;
         }
-    .link{
+    .link__orange, .link__red{
             text-decoration: none;
             font-size: 1.2em;
             font-weight: 800;
@@ -40,6 +40,6 @@
         }
         .link__red::before{
            @include bgLinkBehind();
-           background: rgba(255 0 0/.6);
+           background: rgb(255 0 0/.6);
         }
-      
+    

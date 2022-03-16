@@ -1,15 +1,6 @@
 @import "./resetsAndVariables";
 @import "./blockTexts";
-
-
-
-
-.main__backgroundImg{
-    background: url(./images/mobile/image-header.jpg) center/cover fixed no-repeat;
-    height: 100vh;
-    padding-top: 1px;
-    border: solid red;
-    position: relative;
+@import "./backgroundText";
 
     nav{
         display: flex;
@@ -35,7 +26,8 @@
     .main__header-arrow{
         position: absolute;
         bottom: 25%;
-        left: 46%;
+        left: 49%;
         height: 150px;
     }
-}
+
+
