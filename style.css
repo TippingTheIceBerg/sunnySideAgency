@@ -12,7 +12,7 @@ img {
   max-width: 100%;
 }
 
-.sectionContainer {
+.textWithLinkContainer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -58,22 +58,61 @@ img {
 }
 
 .main__backgroundImg {
-  background: url("images/mobile/image-header.jpg") no-repeat center;
-  height: 120vh;
+  background: url("images/mobile/image-header.jpg") no-repeat center/cover;
+  height: 100vh;
   padding-top: 1px;
-  border: solid red;
   position: relative;
   width: 100vw;
 }
 
-.cherryContainer {
-  background: url("./images/mobile/image-graphic-design.jpg") no-repeat center;
-  height: 120vh;
+.cherryContainer__img {
+  background: url("./images/mobile/image-graphic-design.jpg") no-repeat center/cover;
+  height: 100vh;
   padding-top: 1px;
-  border: solid red;
   position: relative;
   width: 100vw;
-  background-position: top;
+}
+.cherryContainer__img .cherryContainer__div {
+  position: absolute;
+  bottom: 50px;
+  padding: 1em;
+  text-align: center;
+}
+.cherryContainer__img .cherryContainer__header {
+  margin-bottom: 30px;
+  font-size: 2.3em;
+  color: #214f45;
+}
+.cherryContainer__img .cherryContainer__paragraph {
+  line-height: 30px;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #214f45;
+}
+
+.orangeContainer__img {
+  background: url("./images/mobile/image-photography.jpg") no-repeat center/cover;
+  height: 100vh;
+  padding-top: 1px;
+  position: relative;
+  width: 100vw;
+}
+.orangeContainer__img .orangeContainer__div {
+  position: absolute;
+  bottom: 50px;
+  padding: 1em;
+  text-align: center;
+}
+.orangeContainer__img .orangeContainer__header {
+  margin-bottom: 30px;
+  font-size: 2.3em;
+  color: #00283d;
+}
+.orangeContainer__img .orangeContainer__paragraph {
+  line-height: 30px;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #00283d;
 }
 
 nav {
@@ -93,9 +132,10 @@ nav {
   letter-spacing: 5px;
 }
 
-.main__header-arrow {
+.main__header-arrowImage {
   position: absolute;
   bottom: 25%;
-  left: 49%;
+  left: 50%;
+  transform: translateX(-50%);
   height: 150px;
 }/*# sourceMappingURL=style.css.map */

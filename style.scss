@@ -23,10 +23,11 @@
 
 
     }
-    .main__header-arrow{
+    .main__header-arrowImage{
         position: absolute;
         bottom: 25%;
-        left: 49%;
+        left: 50%;
+        transform: translateX(-50%);
         height: 150px;
     }
 
