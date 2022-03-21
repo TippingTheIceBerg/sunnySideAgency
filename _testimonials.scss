@@ -1,0 +1,40 @@
+@import "./blockTexts";
+
+$lightGray: rgba(128 128 128/.8);
+
+.testimonials{
+    margin-top: 40px;
+    padding: 40px;
+}
+.testimonial__heading{
+    text-align: center;
+    padding: 20px;
+    color: $lightGray;
+}
+.testimonial__div{
+    @include flexCenter(center);
+    flex-direction: column;
+    text-align:center;
+    gap: 10px;
+    padding: 30px;
+   
+}
+
+.testimonial__img{
+    height: 90px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.testimonial__statement{
+    margin: 20px;
+    line-height: 30px;
+    font-size: 1.1em;
+}
+.testimonial__name{
+    font-weight: 800;
+    font-size: 1.2em;
+}
+.testimonial__occupation{
+    color: $lightGray;
+}
