@@ -1,7 +1,6 @@
 @media (min-width: 750px){
 // nav
-.main__backgroundImg{
-    background-size: cover;}
+
     .nav__hamburger{
         opacity: 0;
     }
@@ -13,5 +12,16 @@
         border-radius:50px;
         padding: 15px;
         color: black;
+    }
+    .main__backgroundImg{
+        background: url("./images/desktop/image-header.jpg") no-repeat center/cover ;
+        background-color: #3ebfff;
+
+    }
+    .main__header{
+        width: 2000px;
+    }
+    .main__header-arrowImage{
+        top:300px;
     }
 }

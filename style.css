@@ -6,10 +6,8 @@
 
 html, body {
   background-color: #f3ebe5;
-}
-
-img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .textWithLinkContainer {
@@ -58,7 +56,7 @@ img {
 }
 
 .main__backgroundImg {
-  background: url("images/mobile/image-header.jpg") no-repeat center/cover;
+  background: url("images/mobile/image-header.jpg") no-repeat center;
   height: 100vh;
   padding-top: 1px;
   position: relative;
@@ -66,7 +64,7 @@ img {
 }
 
 .cherryContainer__img {
-  background: url("./images/mobile/image-graphic-design.jpg") no-repeat center/cover;
+  background: url("./images/mobile/image-graphic-design.jpg") no-repeat center;
   height: 100vh;
   padding-top: 1px;
   position: relative;
@@ -91,7 +89,7 @@ img {
 }
 
 .orangeContainer__img {
-  background: url("./images/mobile/image-photography.jpg") no-repeat center/cover;
+  background: url("./images/mobile/image-photography.jpg") no-repeat center;
   height: 100vh;
   padding-top: 1px;
   position: relative;
@@ -292,7 +290,6 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 1.6em;
-  overflow: hidden;
 }
 
 .nav__link {
@@ -329,10 +326,6 @@ nav {
 }
 
 @media (min-width: 750px) {
-  .main__backgroundImg {
-    background-size: cover;
-  }
-
   .nav__hamburger {
     opacity: 0;
   }
@@ -346,5 +339,18 @@ nav {
     border-radius: 50px;
     padding: 15px;
     color: black;
+  }
+
+  .main__backgroundImg {
+    background: url("./images/desktop/image-header.jpg") no-repeat center/cover;
+    background-color: #3ebfff;
+  }
+
+  .main__header {
+    width: 2000px;
+  }
+
+  .main__header-arrowImage {
+    top: 300px;
   }
 }/*# sourceMappingURL=style.css.map */
