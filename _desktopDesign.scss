@@ -19,9 +19,14 @@
 
     }
     .main__header{
-        width: 2000px;
+        width: 100%;
     }
     .main__header-arrowImage{
         top:350px;
+    }
+    .grid__mainTextImg{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+    
     }
 }
