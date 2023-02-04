@@ -21,7 +21,6 @@
 }
 
 .header__logo{
-    
     width: 40px;
     margin-left: 10px;;
     font-weight: 900;
@@ -65,7 +64,7 @@
     height: 400px;
 }
 
-.main__transformYourBrand{
+.main__transformYourBrand,.main__standOutText{
     margin: 60px;
     display: flex;
     flex-direction: column;
@@ -73,17 +72,138 @@
     align-items: center;
 }
 
-.transformYourBrand__heading{
-    font-size: 1.3em;
+.transformYourBrand__heading,.standOutText__header{
+    font-size: 1.5em;
     font-weight: bolder;
     text-align: center;
     margin-bottom: 20px;
 }
-.transformYourBrand__text{
+.transformYourBrand__text,.standOutText__text{
     font-size: 1.1em;
     margin-bottom: 20px;
     text-align: center;
 }
-.transformYourBrand__link{
+.transformYourBrand__link--yellow, .standOutText__link--red{
     text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.transformYourBrand__link--yellow::after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -2px;
+    width: 110px;
+    height: 4px;
+    background-color: rgba(214, 212, 50, 0.5);
+    z-index: -2;
+}
+.main__standOut{
+    background: url(./images/mobile/image-stand-out.jpg) center/cover;
+    height: 400px;
+}
+.standOutText__heading{
+    text-align: center;
+}
+.standOutText__link--red::after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -2px;
+    width: 110px;
+    height: 4px;
+    background-color:  rgb(255 116 101/ .5);
+    z-index: -2;
+}
+
+/* Cherry */
+.main__graphicDesign{
+    background: url(./images/mobile/image-graphic-design.jpg) center/cover;
+    height: 750px;
+    position: relative;
+}
+
+.graphicDesign__container{
+    position: absolute;
+    bottom: 90px;
+    text-align: center;
+}
+.graphicDesign__heading{
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: hsl(163, 28%, 25%);
+}
+.graphicDesign__text{
+    font-size: 1.5em;
+    color: hsl(163, 28%, 25%);
+}
+
+/* photo */
+.main__photo{
+    background: url(./images/mobile/image-photography.jpg) center/cover;
+    height: 750px;
+    position: relative;
+}
+
+.photo__container{
+    position: absolute;
+    bottom: 90px;
+    text-align: center;
+}
+.photo__heading{
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: hsl(205, 71%, 25%);
+}
+.photo__text{
+    font-size: 1.5em;
+    color: hsl(205, 71%, 25%);
+}
+
+/* testimonial */
+.main__testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.testimonial__person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.person__text{
+    padding: 20px;
+}
+.person__name{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+.person__role{
+    color: hsla(0, 0%, 40%, .5);
+    font-size: .8em;
+}
+.person__img{
+    border-radius: 50%;
+    height: 50px;
+}
+/* Image Gallery */
+.main__imgGallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 200px;
+}
+
+.imgGallery__img{
+    width: 100%;
+    aspect-ratio: 1;
 }
