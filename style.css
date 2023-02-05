@@ -1,13 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    outline: solid rgb(0 255 0/1)
     
 }
-body{
-    font-family: 'Barlow', sans-serif;
 
-}
 
 .header{
     background: url(./images/mobile/image-header.jpg) center/cover;
@@ -78,8 +74,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 400px;
-    font-family: 'Fraunces', serif;
-
+    font-family: 'Barlow', sans-serif;
 }
 
 .transformYourBrand__heading,.standOutText__heading{
@@ -87,6 +82,8 @@ body{
     font-weight: bolder;
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Fraunces', serif;
+
 }
 .transformYourBrand__text,.standOutText__text{
     font-size: 1.2em;
@@ -106,9 +103,9 @@ body{
 .transformYourBrand__link--yellow::after{
     content: "";
     position: absolute;
-    top: 14px;
-    left: -2px;
-    width: 140px;
+    top: 18px;
+    left: -5px;
+    width: 120px;
     height: 6px;
     background-color: rgba(214, 212, 50, 0.5);
     z-index: -2;
@@ -123,9 +120,9 @@ body{
 .standOutText__link--red::after{
     content: "";
     position: absolute;
-    top: 14px;
-    left: -2px;
-    width: 140px;
+    top: 18px;
+    left: -5px;
+    width: 120px;
     height: 4px;
     background-color:  rgb(255 116 101/ .5);
     z-index: -2;
@@ -154,6 +151,8 @@ body{
     font-size: 1.5em;
     color: hsl(163, 28%, 25%);
     margin:20px;
+    font-family: 'Barlow', sans-serif;
+    
 }
 
 /* photo */
@@ -179,6 +178,7 @@ body{
     font-size: 1.5em;
     color: hsl(205, 71%, 25%);
     margin: 20px;
+    font-family: 'Barlow', sans-serif;
 }
 
 /* testimonial */
@@ -211,20 +211,24 @@ body{
 .person__text{
     padding: 20px;
     line-height: 1.6;
-    opacity: .7;
+    opacity: .55;
+    font-size: 1.5em;
+    font-family: 'Barlow', sans-serif;
 }
 .person__name{
     font-weight: 700;
-    margin-bottom: 5px;
-    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    
 }
 .person__role{
     color: hsla(0, 0%, 40%, .5);
-    font-size: .8em;
+    font-size: 1.1em;
+
 }
 .person__img{
     border-radius: 50%;
-    height: 50px;
+    height: 100px;
 }
 /* Image Gallery */
 .main__imgGallery{
@@ -254,7 +258,7 @@ footer{
 .footer__link{
     font-size: 1.5em;
     font-weight: 500;
-    padding:30px;
+    padding:20px;
     text-decoration: none;
     color: rgb(45 117 103);
 
