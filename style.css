@@ -5,6 +5,7 @@
 }
 
 
+
 .header{
     background: url(./images/mobile/image-header.jpg) center/cover;
     height: 700px;
@@ -268,4 +269,67 @@ footer{
 }
 .socialLink img{
     height: 24px;
+}
+@media (min-width:500px) {
+    .header{
+        background: url(./images/desktop/image-header.jpg) center/cover;
+        font-family: 'Fraunces', serif;
+        height: 700px;
+    } 
+    .header__direction{
+        top: 14%;
+        width: 600px;
+
+    }
+    .header__direction::after{
+        transform: scale(1.1);
+        content: url(./images/icon-arrow-down.svg);
+        height: 200px;
+        position: absolute;
+        margin-left: -10px;
+        top:110px;
+    }
+   
+    .main__standOut{
+        background: url(./images/desktop/image-stand-out.jpg) center/cover;
+        height: 550px;
+        grid-area: standOut;
+    }
+    .main__egg{
+        background: url(./images/desktop/image-transform.jpg) center/cover;
+        height: 550px;
+        grid-area: egg;
+    }
+    .main__transformYourBrand, .main__standOutText{
+        padding: 40px;
+        margin: 0;
+        height: auto;
+
+    }
+    .main__transformYourBrand{
+        grid-area: transformText;
+        align-items: baseline;
+      
+    }
+    .transformYourBrand__text{
+        text-align: left;
+    }
+    .main__standOutText{
+        grid-area: standOutText;
+        align-items: baseline;
+  
+
+    }
+    .standOutText__text{
+        text-align: left;
+    }
+    .desktop__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-content: center;
+        height: auto;
+        grid-template-areas: 
+        "transformText egg"
+        "standOut standOutText"
+    }
 }
