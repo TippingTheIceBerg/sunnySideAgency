@@ -182,14 +182,15 @@
     font-family: 'Barlow', sans-serif;
 }
 
-/* testimonial */
-.main__testimonials{
+/* testimonial */x
+
+.testimonials__persons{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #eee;
-    padding: 20px;
+    padding: 100px;
+
 }
 .testiomonials__heading{
     letter-spacing: 2px;
@@ -197,6 +198,8 @@
     opacity: .4;
     font-size: 1.3em;
     font-weight: 100;
+    text-align: center;
+    padding-top: 50px;
     
 }
 
@@ -207,6 +210,7 @@
     align-items: center;
     text-align: center;
     padding: 20px;
+    margin-bottom: 40px;
 }
 
 .person__text{
@@ -242,6 +246,11 @@
     width: 100%;
     aspect-ratio: 1;
 }
+.imgGallery__img{
+    display: flex;
+}
+
+/* footer */
 footer{
     display: block;
     height: 400px;
@@ -289,7 +298,7 @@ footer{
         margin-left: -10px;
         top:110px;
     }
-   
+
     .main__standOut{
         background: url(./images/desktop/image-stand-out.jpg) center/cover;
         height: 550px;
@@ -308,8 +317,7 @@ footer{
     }
     .main__transformYourBrand{
         grid-area: transformText;
-        align-items: baseline;
-      
+        align-items: baseline; 
     }
     .transformYourBrand__text{
         text-align: left;
@@ -317,7 +325,6 @@ footer{
     .main__standOutText{
         grid-area: standOutText;
         align-items: baseline;
-  
 
     }
     .standOutText__text{
@@ -332,4 +339,45 @@ footer{
         "transformText egg"
         "standOut standOutText"
     }
-}
+    .main__graphicDesign{
+        background: url(./images/desktop/image-graphic-design.jpg)center/cover;
+    }
+    .graphicDesign__heading{
+        font-size: 2em;
+    }
+    .graphicDesign__text{
+
+        line-height: 30px;
+    }
+    .main__photo{
+        background: url(./images/desktop/image-photography.jpg)center/cover;
+    }
+    .photo__heading{
+        font-size: 2em;
+    }
+    .photo__text{
+        line-height: 30px;
+    }
+    .testimonials__persons{
+        display: flex;
+        flex-direction: row;
+    }
+    .person__text{
+        font-size: 1.2em ;
+    }
+    .main__imgGallery{
+        grid-template-columns: repeat(4,1fr);
+
+    }
+    }
+
+    @media (min-width:1200px){
+        .graphicDesign__text{
+            margin: 0 150px;
+            font-size: 1.3em;
+        }
+        .photo__text{
+            margin: 0 150px;
+            font-size: 1.3em;
+        }
+    }

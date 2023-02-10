@@ -63,30 +63,44 @@
     </section>
     <section class="main__testimonials">
       <h2 class="testiomonials__heading">CLIENT TESTIMONIALS</h2>
-      <div class="testimonial__person testimonial__emily">
-        <img class="person__img" src="./images/image-emily.jpg" alt="">
-        <p class="emily__text person__text">We put our trust in Sunnside and they were delivered, making sure our needs were met and deadlines were always hit.</p>
-        <p class="emily__name person__name">Emily R.</p>
-        <p class="emily__role person__role">Marketing Director</p>
-      </div>
-      <div class="testimonial__person testimonial__thomas">
-        <img class="person__img" src="./images/image-thomas.jpg" alt="">
-        <p class="thomas__text person__text">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
-        <p class="thomas__name person__name">Thomas S.</p>
-        <p class="thomas__role person__role">Chief Operating Officer</p>
-      </div>
-      <div class="testimonial__person testimonial__jennie">
-        <img class="person__img" src="./images/image-jennie.jpg" alt="">
-        <p class="jennie__text person__text">Incredible end result! Our sales increased over 400% where we worked with Sunnyside. Highly recommended!</p>
-        <p class="jennie__name person__name">Jennie F.</p>
-        <p class="jennie__role person__role">Business Owner</p>
-      </div>
+      <section class="testimonials__persons">
+        <div class="testimonial__person testimonial__emily">
+          <img class="person__img" src="./images/image-emily.jpg" alt="">
+          <p class="emily__text person__text">We put our trust in Sunnside and they were delivered, making sure our needs were met and deadlines were always hit.</p>
+          <p class="emily__name person__name">Emily R.</p>
+          <p class="emily__role person__role">Marketing Director</p>
+        </div>
+        <div class="testimonial__person testimonial__thomas">
+          <img class="person__img" src="./images/image-thomas.jpg" alt="">
+          <p class="thomas__text person__text">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+          <p class="thomas__name person__name">Thomas S.</p>
+          <p class="thomas__role person__role">Chief Operating Officer</p>
+        </div>
+        <div class="testimonial__person testimonial__jennie">
+          <img class="person__img" src="./images/image-jennie.jpg" alt="">
+          <p class="jennie__text person__text">Incredible end result! Our sales increased over 400% where we worked with Sunnyside. Highly recommended!</p>
+          <p class="jennie__name person__name">Jennie F.</p>
+          <p class="jennie__role person__role">Business Owner</p>
+        </div>
+      </section>
     </section>
     <section class="main__imgGallery">
-      <img class="imgGallery__img" src="./images/mobile/image-gallery-milkbottles.jpg" alt="">
-      <img class="imgGallery__img" src="./images/mobile/image-gallery-orange.jpg" alt="">
-      <img class="imgGallery__img" src="./images/mobile/image-gallery-cone.jpg" alt="">
-      <img class="imgGallery__img" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+      <picture  class="imgGallery__img">
+        <source media= "(max-width: 540px)" srcset="./images/desktop/image-gallery-milkbottles.jpg">
+        <img class="imgGallery__img" src="./images/mobile/image-gallery-milkbottles.jpg" alt="">
+      </picture>
+      <picture class="imgGallery__img">
+        <source media= "(max-width: 540px)" srcset="./images/desktop/image-gallery-orange.jpg">
+        <img class="imgGallery__img" src="./images/mobile/image-gallery-orange.jpg" alt="">
+      </picture>
+      <picture class="imgGallery__img">
+        <source media= "(max-width: 540px)" srcset="./images/desktop/image-gallery-cone.jpg">
+        <img class="imgGallery__img" src="./images/mobile/image-gallery-cone.jpg" alt="">
+      </picture>
+      <picture class="imgGallery__img">
+        <source media= "(max-width: 540px)" srcset="./images/desktop/image-gallery-sugarcubes.jpg">
+        <img class="imgGallery__img" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+      </picture>
     </section>
   </main>
   <footer>
