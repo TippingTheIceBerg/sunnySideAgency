@@ -10,6 +10,7 @@
     background: url(./images/mobile/image-header.jpg) center/cover;
     height: 600px;
     font-family: 'Fraunces', serif;
+    overflow: hidden;
 
 }
 .header__logoAndNav{
@@ -104,7 +105,7 @@
     color: rgba(128, 128, 128,.6);
     font-size: 1.2em;
 }
-.nav__link--yellowBg{
+.nav__link--contact{
     background-color: #fed400;
     padding: 20px 40px;
     border-radius: 40px;
@@ -372,7 +373,29 @@ footer{
         margin-left: -10px;
         top:110px;
     }
+    .header__burger{
+        right:-200px
+    }
+    .nav__links--inactive{
+        flex-direction: row;
+        top: 0;
+        right: 400px;
+        background-color: transparent;
+        position: absolute;
+    }
+    .nav__link{
+        font-size: 1.1em;
+        margin: 0 15px;
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 300;
+    }
+    .nav__link--contact{
+        background-color: white;
+        padding: 15px 25px;
+        color: black;
 
+    }
     .main__standOut{
         background: url(./images/desktop/image-stand-out.jpg) center/cover;
         height: 550px;
