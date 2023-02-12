@@ -183,7 +183,7 @@
     left: -5px;
     width: 120px;
     height: 6px;
-    background-color: rgba(214, 212, 50, 0.5);
+    background-color: rgb(255 213 4/.4);
     z-index: -2;
 }
 .main__standOut{
@@ -199,8 +199,8 @@
     top: 18px;
     left: -5px;
     width: 120px;
-    height: 4px;
-    background-color:  rgb(255 116 101/ .5);
+    height: 6px;
+    background-color:  rgb(255 116 101/ .4);
     z-index: -2;
 }
 
@@ -354,6 +354,8 @@ footer{
 .socialLink img{
     height: 24px;
 }
+
+/* desktop design */
 @media (min-width:500px) {
     .header{
         background: url(./images/desktop/image-header.jpg) center/cover;
@@ -394,7 +396,11 @@ footer{
         background-color: white;
         padding: 15px 25px;
         color: black;
-
+        transition: linear all .1s;
+    }
+    .nav__link--contact:hover{
+        background-color: rgba(255, 255, 255, 0.3);
+        color: white;
     }
     .main__standOut{
         background: url(./images/desktop/image-stand-out.jpg) center/cover;
@@ -410,12 +416,12 @@ footer{
         padding: 40px;
         margin: 0;
         height: auto;
-
     }
     .main__transformYourBrand{
         grid-area: transformText;
         align-items: baseline; 
     }
+    
     .transformYourBrand__text{
         text-align: left;
     }
@@ -426,6 +432,12 @@ footer{
     }
     .standOutText__text{
         text-align: left;
+    }
+    .transformYourBrand__link--yellow:hover::after{
+        background-color: rgb(255 213 4/1)
+    }
+    .standOutText__link--red:hover::after{
+        background-color: rgb(255 116 101/ 1);
     }
     .desktop__grid{
         display: grid;
@@ -455,6 +467,9 @@ footer{
     .photo__text{
         line-height: 30px;
     }
+    .main__testimonials{
+        margin: 100px 0;
+    }
     .testimonials__persons{
         display: flex;
         flex-direction: row;
@@ -464,6 +479,17 @@ footer{
     }
     .main__imgGallery{
         grid-template-columns: repeat(4,1fr);
+
+    }
+    .footer__link{
+        transition: linear .2s all;
+    }
+    .footer__link:hover{
+        color: white;
+    }
+ 
+    .socialLink:hover img{
+        filter: brightness(50);
 
     }
     }
@@ -478,5 +504,3 @@ footer{
             font-size: 1.3em;
         }
     }
-
-  

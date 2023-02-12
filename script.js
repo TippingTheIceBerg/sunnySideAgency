@@ -1,9 +1,8 @@
-let hamburger = document.querySelector(".header__burger");
 let links = document.querySelector(".nav__links--inactive")
 let linksAfter = window.getComputedStyle(links,"::after");
 let burgerImg = document.querySelector(".burger__img")
 
-hamburger.addEventListener("click", ()=>{
+burgerImg.addEventListener("click", ()=>{
     if(links.className == "nav__links--inactive"){
         links.className = "nav__links--active"
         linksAfter.className = "nav__links--active::after";
